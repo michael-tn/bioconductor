@@ -12,7 +12,7 @@ export PATH="/opt/anaconda2/bin:$PATH"
 
 	apt-get update
 
-	apt-get install -y wget libboost-all-dev
+	apt-get install -y curl wget libboost-all-dev
 	
 	R --slave -e "source('https://bioconductor.org/biocLite.R'); \
 		      biocLite('ChIPQC')"
